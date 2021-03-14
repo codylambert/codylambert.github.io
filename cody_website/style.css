@@ -1,0 +1,135 @@
+body {
+  background: #dddfd4;
+  margin: 0;
+}
+
+ul {
+  margin: auto;
+  margin-top: 22px;
+  width: auto;
+  text-align: center;
+}
+
+.navigation li {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  padding: 10px;
+  width: 25%;
+}
+
+a:link {
+  text-decoration: none;
+  color: #173e43;
+}
+
+a:visited {
+  color: #173e43;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: #173e43;
+}
+
+h1 {
+  color: #173e43;
+  text-align: center;
+  font-family: Times;
+  padding: 20px 0 20px 0;
+  background-color: #3fb0ac;
+  font-size: 60px;
+  text-shadow: 3px 3px #999;
+}
+
+h2 {
+  color: #173e43;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  text-shadow: 2px 2px #999;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+}
+
+.experience li {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.6);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+  90% {
+    opacity: .9;
+    transform: none;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(150%);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(150%);
+  }
+  90% {
+    opacity: .9;
+    transform: none;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-pop-in {
+  animation: pop-in .7s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 1.8s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 1.8s ease-out;
+}
